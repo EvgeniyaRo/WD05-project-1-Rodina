@@ -1,0 +1,25 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Логотип - Документация';
+	- var pageClass = 'body--dashboard dark-bg';
+
+block content
+	.main-wrapper
+		.container.container--left.user-content.pt-35
+			h1 Логотоп
+
+			.section-ui
+				+logo ('Блог странника о путешествиях')
+			pre.
+				+logo ('Блог странника о путешествиях')
+
+			.title mixin _logo.pug
+
+			pre.
+				mixin logo (text)
+					.logo #{text}
+
+					
+
+		

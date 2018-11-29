@@ -1,0 +1,31 @@
+extends ../../layouts/ui-layout/ui-layout.pug
+
+block variables
+	- var title = 'Форма комментирования - Документация';
+	- var pageClass = 'body--dashboard';
+
+block content
+	.main-wrapper
+		.container.container--left.user-content.pt-35
+			h1 Форма комментирования
+
+			.section-ui
+				include ../../sections/post-comment.pug
+
+			pre.
+				include ../../sections/post-comment.pug
+
+			.title sections/post-comment.pug
+
+			pre.
+				.post-comment
+					.post-comment__title Оставить комментарий
+					form.post-comment-plate
+						+textarea('Я тоже там был, вот мои впечатления.')
+						.mt-10
+							+buttonPrimary('Опубликовать')
+
+					
+
+
+		
